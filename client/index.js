@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import World from './world';
 
 var config = {
     type: Phaser.AUTO,
@@ -16,7 +17,7 @@ var config = {
         autoCenter: Phaser.Scale.CENTER_BOTH,
     },
     backgroundColor: '#000000',
-    scene: []
+    scene: [World]
 }
 
 const game = new Phaser.Game(config);
